@@ -1,44 +1,41 @@
-import colour
 import csv
 import json
 import os
-import pprint
+from tabulate import tabulate
 
 
-# write to file as json, csv, markdown, plaintext or print table
-
-
-def write_data(data, user, format=None):
-    if format is not None:
+def write_data(d, u, f=None):
+    if f is not None:
 
         directory = './data/'
 
         if not os.path.exists(directory):
             os.makedirs(directory)
 
-        f = open(directory + user + '.' + format, 'w')
+        file = open(directory + u + '.' + f, 'w')
 
-        if format == 'json':
-            f.write(json.dumps(data, indent=4))
-        elif format == 'csv':
-            keys = data[0].keys()
-            dw = csv.DictWriter(f, fieldnames=keys)
+        if f == 'json':
+            file.write(json.dumps(d, indent=4))
+        elif f == 'csv':
+            keys = d[0].keys()
+            dw = csv.DictWriter(file, fieldnames=keys)
             dw.writeheader()
-            dw.writerows(data)
-        elif format == 'md':
-            f.write('## %s - GitHub repositories\n' % user)
-            for row in data:
-                f.write(
+            dw.writerows(d)
+        elif f == 'md':
+            file.write('## %s - GitHub repositories\n' % u)
+            for row in d:
+                file.write(
                     '#### {}\n\n{}  \n_{}_, {} star(s)\n\n'.format(row['name'],
                                                                    row['desc'],
                                                                    row['lang'],
                                                                    row['stars']))
-        elif format == 'txt':
-            f.write('%s - GitHub repositories\n\n' % user)
-            for row in data:
-                f.write('{}\n{}\n{}, {} star(s)\n\n'.format(row['name'],
-                                                            row['desc'],
-                                                            row['lang'],
-                                                            row['stars']))
-
-        f.close()
+        elif f == 'txt':
+            file.write('%s - GitHub repositories\n\n' % u)
+            for row in d:
+                file.write('{}\n{}\n{}, {} star(s)\n\n'.format(row['name'],
+                                                               row['desc'],
+                                                               row['lang'],
+                                                               row['stars']))
+        file.close()
+    else:
+        print(tabulate(d, headers="keys"))

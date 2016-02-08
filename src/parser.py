@@ -28,6 +28,5 @@ def parse(response):
 
 if __name__ == '__main__':
     import pprint
-
     u = 'kshvmdn'
     pprint.pprint(main(u))

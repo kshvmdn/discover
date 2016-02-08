@@ -8,7 +8,6 @@ def main(user):
 
 
 def request(user):
-    ''' return the response body for the url with the given'''
     return requests.get(url=API_URL.format(user))
 
 
@@ -23,16 +22,11 @@ def parse(response):
                 'name': repo['name'],
                 'desc': repo['description'],
                 'lang': repo['language'],
-                'stars': repo['stargazers_count'],
-                'dates': {
-                    'created': repo['created_at'],
-                    'updated': repo['updated_at'],
-                    'pushed': repo['pushed_at']
-                }
+                'stars': repo['stargazers_count']
             })
     return data
 
 if __name__ == '__main__':
     import pprint
     u = 'kshvmdn'
-    pprint.pprint(get_data(u))
+    pprint.pprint(main(u))

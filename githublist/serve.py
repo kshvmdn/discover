@@ -7,12 +7,13 @@ from tabulate import tabulate
 
 def serve_content(data, user, format_=None):
     if format_ is not None and len(data) > 0:
+        # directory = './out/'
         directory = './out/' + user + '/'
         if not os.path.exists(directory):
             os.makedirs(directory)
 
         # filename will be user.mmddyy.format e.g. kshvmdn.020816.json
-        f = open(directory + time.strftime("%m%d%y") + '.' + format_, 'w')
+        f = open(directory + user + '.' + time.strftime("%m%d%y") + '.' + format_, 'w')
 
         if format_ == 'json':
             f.write(json.dumps(data, indent=4))

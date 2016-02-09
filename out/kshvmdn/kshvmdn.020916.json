@@ -1,0 +1,152 @@
+[
+    {
+        "name": "alexa-site-comparer",
+        "desc": "Compare Alexa stats for multiple websites.",
+        "lang": "JavaScript",
+        "stars": 0
+    },
+    {
+        "name": "border-times",
+        "desc": "Waiting times for entering the US from Canadian borders served as a Web API.",
+        "lang": "Python",
+        "stars": 1
+    },
+    {
+        "name": "define-it",
+        "desc": "Node package to get the definition of words.",
+        "lang": "JavaScript",
+        "stars": 0
+    },
+    {
+        "name": "einfo-scrapers",
+        "desc": "Web API for Canadian post-secondary data from Electronic Info.",
+        "lang": "Python",
+        "stars": 0
+    },
+    {
+        "name": "facebot",
+        "desc": "Facebook Messenger bot, built at UofTHacks III.",
+        "lang": "JavaScript",
+        "stars": 1
+    },
+    {
+        "name": "github-list",
+        "desc": "Generate a list of a users' GitHub repositories in various formats.",
+        "lang": "Python",
+        "stars": 0
+    },
+    {
+        "name": "insta-dl",
+        "desc": "Download photos from any public Instagram account.",
+        "lang": "Python",
+        "stars": 0
+    },
+    {
+        "name": "kshvmdn.github.io",
+        "desc": "Personal site",
+        "lang": "HTML",
+        "stars": 1
+    },
+    {
+        "name": "latestvid",
+        "desc": "A command-line tool to open or download the most recent YouTube video for any account.",
+        "lang": "JavaScript",
+        "stars": 0
+    },
+    {
+        "name": "meme-me",
+        "desc": "A command line tool to open a random meme.",
+        "lang": "JavaScript",
+        "stars": 0
+    },
+    {
+        "name": "messengerbot",
+        "desc": "A bot for Facebook Messenger.",
+        "lang": "JavaScript",
+        "stars": 1
+    },
+    {
+        "name": "nba-player-profiler",
+        "desc": "Compare stats for multiple NBA players at once.",
+        "lang": "JavaScript",
+        "stars": 0
+    },
+    {
+        "name": "nba-scores",
+        "desc": "Get live NBA game updates through the command line.",
+        "lang": "Python",
+        "stars": 0
+    },
+    {
+        "name": "nbadrafts",
+        "desc": "Datasets for all NBA drafts since the 1947 season.",
+        "lang": "Python",
+        "stars": 0
+    },
+    {
+        "name": "next-ride-api",
+        "desc": "Web API for Brampton Transit's NextRide service.",
+        "lang": "JavaScript",
+        "stars": 0
+    },
+    {
+        "name": "nowplaying",
+        "desc": "Python command line tool to see what song is currently playing in iTunes (OS X only).",
+        "lang": "Python",
+        "stars": 0
+    },
+    {
+        "name": "pkg-stats",
+        "desc": "A command line tool for getting download stats for npm packages.",
+        "lang": "JavaScript",
+        "stars": 0
+    },
+    {
+        "name": "plan",
+        "desc": "Comprehensively plan your road trips.",
+        "lang": "JavaScript",
+        "stars": 0
+    },
+    {
+        "name": "reddit-bots",
+        "desc": "A collection of small reddit bots.",
+        "lang": "Python",
+        "stars": 0
+    },
+    {
+        "name": "reddit-cli",
+        "desc": "Browse reddit through the command line.",
+        "lang": "JavaScript",
+        "stars": 0
+    },
+    {
+        "name": "RNgif",
+        "desc": "Generate a random GIF URL based on the provided keyword(s).",
+        "lang": "Python",
+        "stars": 0
+    },
+    {
+        "name": "seen-it",
+        "desc": "Stream YouTube content from /r/videos. Replacement for the now-deprecated reddit.tv.",
+        "lang": "JavaScript",
+        "stars": 0
+    },
+    {
+        "name": "show-me-a-movie",
+        "desc": "Stream a movie torrent through your command line.",
+        "lang": "JavaScript",
+        "stars": 0
+    },
+    {
+        "name": "tictactoe",
+        "desc": "Simple TicTacToe iOS game written in Swift.",
+        "lang": "Swift",
+        "stars": 0
+    },
+    {
+        "name": "toronto-bike-stations",
+        "desc": "An implementation of the Bike Share Toronto open data in the form of a map",
+        "lang": "JavaScript",
+        "stars": 0
+    }
+]

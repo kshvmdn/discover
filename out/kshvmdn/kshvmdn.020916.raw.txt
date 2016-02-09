@@ -1,0 +1,102 @@
+kshvmdn - GitHub repositories
+
+alexa-site-comparer
+Compare Alexa stats for multiple websites.
+JavaScript, 0 star(s)
+
+border-times
+Waiting times for entering the US from Canadian borders served as a Web API.
+Python, 1 star(s)
+
+define-it
+Node package to get the definition of words.
+JavaScript, 0 star(s)
+
+einfo-scrapers
+Web API for Canadian post-secondary data from Electronic Info.
+Python, 0 star(s)
+
+facebot
+Facebook Messenger bot, built at UofTHacks III.
+JavaScript, 1 star(s)
+
+github-list
+Generate a list of a users' GitHub repositories in various formats.
+Python, 0 star(s)
+
+insta-dl
+Download photos from any public Instagram account.
+Python, 0 star(s)
+
+kshvmdn.github.io
+Personal site
+HTML, 1 star(s)
+
+latestvid
+A command-line tool to open or download the most recent YouTube video for any account.
+JavaScript, 0 star(s)
+
+meme-me
+A command line tool to open a random meme.
+JavaScript, 0 star(s)
+
+messengerbot
+A bot for Facebook Messenger.
+JavaScript, 1 star(s)
+
+nba-player-profiler
+Compare stats for multiple NBA players at once.
+JavaScript, 0 star(s)
+
+nba-scores
+Get live NBA game updates through the command line.
+Python, 0 star(s)
+
+nbadrafts
+Datasets for all NBA drafts since the 1947 season.
+Python, 0 star(s)
+
+next-ride-api
+Web API for Brampton Transit's NextRide service.
+JavaScript, 0 star(s)
+
+nowplaying
+Python command line tool to see what song is currently playing in iTunes (OS X only).
+Python, 0 star(s)
+
+pkg-stats
+A command line tool for getting download stats for npm packages.
+JavaScript, 0 star(s)
+
+plan
+Comprehensively plan your road trips.
+JavaScript, 0 star(s)
+
+reddit-bots
+A collection of small reddit bots.
+Python, 0 star(s)
+
+reddit-cli
+Browse reddit through the command line.
+JavaScript, 0 star(s)
+
+RNgif
+Generate a random GIF URL based on the provided keyword(s).
+Python, 0 star(s)
+
+seen-it
+Stream YouTube content from /r/videos. Replacement for the now-deprecated reddit.tv.
+JavaScript, 0 star(s)
+
+show-me-a-movie
+Stream a movie torrent through your command line.
+JavaScript, 0 star(s)
+
+tictactoe
+Simple TicTacToe iOS game written in Swift.
+Swift, 0 star(s)
+
+toronto-bike-stations
+An implementation of the Bike Share Toronto open data in the form of a map
+JavaScript, 0 star(s)
+

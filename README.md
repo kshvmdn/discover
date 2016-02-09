@@ -16,7 +16,7 @@ Generate a list of a users' GitHub repositories in various formats, including `j
     pip install -r requirements.txt
     ```
 
-### Running
+### Run
 
 + Run `__main__.py` (Python 3 only!)
 
@@ -34,7 +34,7 @@ Generate a list of a users' GitHub repositories in various formats, including `j
     + md
     + raw.txt
     + tbl.txt
-    + [_Sample output_](https://github.com/kshvmdn/github-list/tree/master/out)
+    + [_sample output_](https://github.com/kshvmdn/github-list/tree/master/out/kshvmdn)
 
 ## Contribute
-This project is completely open source; feel free to open an [issue](https://github.com/kshvmdn/github-list/issues) or make a [PR](https://github.com/kshvmdn/github-list/pulls)
+This project is completely open source; feel free to open an [issue](https://github.com/kshvmdn/github-list/issues) or make a [PR](https://github.com/kshvmdn/github-list/pulls).

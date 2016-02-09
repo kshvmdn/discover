@@ -8,7 +8,7 @@ from githublist.serve import serve_content
 
 parser = argparse.ArgumentParser(description='View repositories for any GitHub account.')
 parser.add_argument('user', type=str, nargs='+', help='GitHub user handle')
-parser.add_argument('--format', nargs='+',
+parser.add_argument('-f', '--format', nargs='+',
                     choices=['json', 'csv', 'md', 'raw.txt', 'tbl.txt', 'all'],
                     help='File output format. default=tbl.txt', default=['tbl.txt'])
 
@@ -16,7 +16,7 @@ parser.add_argument('--format', nargs='+',
 def main():
     args = parser.parse_args()
     user = args.user
-    format_ = args.format
+    format_ = list(set(args.format))  # remove duplicates
     if 'all' in args.format:
         format_ = ['json', 'csv', 'md', 'raw.txt', 'tbl.txt']
 

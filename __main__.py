@@ -7,7 +7,7 @@ from githublist.serve import serve_content
 
 parser = argparse.ArgumentParser(description='View repositories for any GitHub account.')
 parser.add_argument('user', type=str, help='GitHub user handle')
-parser.add_argument('-f', '--format', choices=['json', 'csv', 'md', 'txt'],
+parser.add_argument('-f', '--format', choices=['json', 'csv', 'md', 'raw.txt', 'tbl.txt'],
                     help='File output format.')
 
 

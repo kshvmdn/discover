@@ -1,4 +1,4 @@
-colour==0.1.2
 requests==2.9.1
 tabulate==0.7.5
+termcolor==1.1.0
 wheel==0.29.0

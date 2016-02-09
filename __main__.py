@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 import argparse
+from termcolor import colored, cprint
 
 from githublist.parser import main as get_data
 from githublist.serve import serve_content
@@ -18,16 +19,16 @@ def main():
     format_ = ['json', 'csv', 'md', 'raw.txt', 'tbl.txt'] if 'all' in args.format else args.format
 
     for u in user:
-        print('Preparing data for {}...'.format(u))
+        print('Preparing data for {}...'.format(colored(u, 'white')))
         d = get_data(u)
         for f in format_:
             if f is not None:
-                print(' Writing {}...'.format(f), end='')
+                print(' Writing {}...'.format(colored(f, 'white')), end='')
                 serve_content(d, u, f)
                 print(' Done!')
             else:
                 serve_content(d, u, f)
-    print('Complete!')
+    cprint('Complete!', 'red')
     return None
 
 if __name__ == '__main__':

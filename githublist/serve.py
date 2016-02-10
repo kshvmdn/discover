@@ -7,8 +7,8 @@ from tabulate import tabulate
 
 def serve_content(data, user, format_=None):
     if format_ is not None and len(data) > 0:
-        # directory = './out/'
-        directory = './out/' + user + '/'
+        directory = './out/'
+        # directory = './out/' + user + '/'
         if not os.path.exists(directory):
             os.makedirs(directory)
 

@@ -31,10 +31,10 @@ Generate a list of a users' GitHub repositories in various formats, including `j
 
     + json
     + csv
-    + md
-    + raw.txt
-    + tbl.txt
-    + [_sample output_](https://github.com/kshvmdn/github-list/tree/master/out/kshvmdn)
+    + md (markdown)
+    + raw.txt (raw plaintext)
+    + tbl.txt (plaintext formatted as table)
+    + [_sample output_](https://github.com/kshvmdn/github-list/tree/master/out/)
 
 ## Contribute
 This project is completely open source; feel free to open an [issue](https://github.com/kshvmdn/github-list/issues) or make a [PR](https://github.com/kshvmdn/github-list/pulls).

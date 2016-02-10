@@ -18,7 +18,7 @@ Generate a list of a users' GitHub repositories in various formats, including `j
 
 ### Run
 
-+ Run `__main__.py` (Python 3 only!)
++ Run `__main__.py` (Python 3!)
 
     ```sh
     $ python __main__.py [-h] [user1, user2, ...] [-f [<json|csv|md|raw.txt|tbl.txt|all>, ...]]

@@ -28,7 +28,6 @@ def main():
             serve_content(d, u, f)
             print(' Done!')
     cprint('Complete!', 'red')
-    return None
 
 if __name__ == '__main__':
     main()

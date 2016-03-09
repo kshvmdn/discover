@@ -18,16 +18,16 @@ Generate a list of a users' GitHub repositories in various formats, including `j
 
 ### Run
 
-+ Run `__main__.py` (Python 3!)
++ Run `main.py` (Python 3!)
 
     ```sh
-    python __main__.py [-h] [user1, user2, ...] [-f [{json,csv,md,raw.txt,tbl.txt,all}, ...]]
+    python main.py [-h] [user1, user2, ...] [-f [{json,csv,md,raw.txt,tbl.txt,all}, ...]]
     ```
 
     Output format defaults to tbl.txt. At least one user is required.
     
     ```
-    python __main__.py kshvmdn -f all  # check ./out for sample output
+    python main.py kshvmdn -f all  # check ./out for sample output
     ```
 
 + Output types

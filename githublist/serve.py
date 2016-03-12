@@ -24,13 +24,13 @@ def serve_content(data, user, format_=None):
             dw.writerows(data)
         elif format_ == 'md':
             f.write('## %s - GitHub repositories\n\n' % user)
-            [f.write('### {}\n\n{}  \n_{}_, {} star(s)\n\n'
-                     .format(r['name'], r['desc'], r['lang'], r['stars']))
+            [f.write('### {}\n\n{}  \n_{}_, {} {}\n\n'
+                     .format(r['name'], r['desc'], r['lang'], r['stars'], r['star_str']))
              for r in data]
         elif format_ == 'raw.txt':
             f.write('%s - GitHub repositories\n\n' % user)
-            [f.write('{}\n{}\n{}, {} star(s)\n\n'
-                     .format(r['name'], r['desc'], r['lang'], r['stars']))
+            [f.write('{}\n{}\n{}, {} {}\n\n'
+                     .format(r['name'], r['desc'], r['lang'], r['stars'], r['star_str']))
              for r in data]
         elif format_ == 'tbl.txt':
             f.write('%s - GitHub repositories\n\n' % user)

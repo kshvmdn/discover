@@ -19,13 +19,11 @@ def parse(response):
         return None
     for repo in repos:
         if 'name' in repo and not repo['fork']:
-            star_str = 'star' if repo['stargazers_count'] == 1 else 'stars'
-            data.append(collections.OrderedDict(
-                [('name', repo['name']),
-                 ('desc', repo['description']),
-                 ('lang', repo['language']),
-                 ('stars', repo['stargazers_count']),
-                 ('star_str', star_str)]))
+            data.append(
+                collections.OrderedDict([('name', repo['name']),
+                                         ('desc', repo['description']),
+                                         ('lang', repo['language']),
+                                         ('stars', repo['stargazers_count'])]))
     return data
 
 

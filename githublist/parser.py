@@ -1,7 +1,7 @@
 import requests
 import collections
 
-API_URL = 'https://api.github.com/users/{}/repos'
+API_URL = 'https://api.github.com/users/{}/repos?per_page=100'
 
 
 def main(user):

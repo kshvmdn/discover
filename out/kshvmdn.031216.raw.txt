@@ -100,3 +100,35 @@ show-me-a-movie
 Stream a movie torrent through your command line.
 JavaScript, 0 stars
 
+tictactoe
+Simple TicTacToe iOS game written in Swift.
+Swift, 0 stars
+
+til
+A command line tool for random facts from /r/todayilearned. 
+JavaScript, 0 stars
+
+toronto-bike-stations
+An implementation of the Bike Share Toronto open data in the form of a map
+JavaScript, 0 stars
+
+toronto-road-closures
+Web app that informs users of road closures in the Toronto region.
+HTML, 0 stars
+
+twitter-autoreply
+Automatically reply to Tweets that contain specified phrase(s) with a custom message.
+Python, 0 stars
+
+uoft-exams
+A scraper for semesterly exam timetables.
+Python, 3 stars
+
+wiki-articles
+A Wikipedia article aggregator.
+HTML, 0 stars
+
+xkcd-dl
+Download all xkcd comics to date.
+Python, 0 stars
+

@@ -14,6 +14,14 @@ def index():
     return render_template('index.html')
 
 
+@app.route('/<string:owner>/<string:repo>')
+def results(owner, repo):
+    depth = request.args.get('depth', 1, type=int)
+    data = fetch(owner, repo, depth)
+
+    return render_template('results.html', owner=owner, repo=repo, data=data)
+
+
 @app.route('/api/<string:owner>/<string:repo>')
 def api(owner, repo):
     depth = request.args.get('depth', 1, type=int)

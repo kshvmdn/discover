@@ -6,12 +6,33 @@
   <title>Discover: GitHub</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='styles/normalize.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
 </head>
 <body>
   <div class="container">
-    <div class="header"></div>
-    <div class="content">
-      {% block content %}{% endblock %}
+    <div class="header">
+      <div class="container">
+        <div class="logo">
+          <a href="/"><i>Explore</i> GitHub</a>
+        </div>
+        <div class="float-right">
+          <a href="https://github.com/kshvmdn/discover-github">
+            <img src="{{ url_for('static', filename='images/github.svg') }}" height="24" alt="View on GitHub">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="pagehead">
+        <div class="container">
+          {% block pagehead %}{% endblock %}
+        </div>
+      </div>
+      <div class="pagecontent">
+        <div class="container">
+          {% block pagecontent %}{% endblock %}
+        </div>
+      </div>
     </div>
   </div>
   <script src="{{ url_for('static', filename='scripts/main.js') }}"></script>

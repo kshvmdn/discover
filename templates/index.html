@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block pagehead %}
+  <h1>Enter a repository below to <i>start exploring</i>.</h1>
+  <h3>We'll find related projects by analyzing the repo's stargazers and their profiles.</h3>
+{% endblock %}
+{% block pagecontent %}
+  <p class="github-url">
+    https://github.com/<span class="keyword repo-owner">{owner}</span>/<span class="keyword repo-name">{name}</span>
+  </p>
+  <div class="form">
+    <input type="text" placeholder="Owner" class="repo-owner">
+    <input type="text" placeholder="Name" class="repo-name">
+    <input type="button" value="Go" class="btn">
+  </div>
+{% endblock %}

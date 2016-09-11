@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block pagehead %}
+  <h1>https://github.com/{{ owner }}/{{ repo }}</h1>
+{% endblock %}
+{% block pagecontent %}
+  <ul>
+    {% for repo in data %}
+      <li><a href="https://github.com/{{ repo.slug }}">{{ repo.name }}</a> ({{ repo.count }})</li>
+    {% endfor %}
+  </ul>
+{% endblock %}
+

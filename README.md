@@ -1,4 +1,4 @@
-## github-discover
+## discover-github
 
 > Discover GitHub repositories.
 

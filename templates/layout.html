@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0,user-scalable=0">
+  <title>Discover: GitHub</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/normalize.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}">
+</head>
+<body>
+  <div class="container">
+    <div class="header"></div>
+    <div class="content">
+      {% block content %}{% endblock %}
+    </div>
+  </div>
+  <script src="{{ url_for('static', filename='scripts/main.js') }}"></script>
+</body>
+</html>

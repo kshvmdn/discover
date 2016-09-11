@@ -1,4 +1,4 @@
-## explore-github
+## explore-github [![Build Status](https://travis-ci.org/kshvmdn/explore-github.svg?branch=master)](https://travis-ci.org/kshvmdn/explore-github)
 
 > Explore GitHub repositories.
 

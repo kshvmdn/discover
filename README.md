@@ -7,7 +7,7 @@
 - Clone repository.
 
   ```sh
-  $ git clone https://github.com/kshvmdn/explore-github.git && cd $_ && pip install -r ./requirements.txt
+  $ git clone https://github.com/kshvmdn/explore-github.git explore-github && cd $_ && pip install -r ./requirements.txt
   ```
 
 - [Create new developer application](https://github.com/settings/developers) (for Client ID / Client Secret - you can use the app w/o these, but the 60 requests / hr generally isn't enough).

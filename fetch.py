@@ -15,7 +15,7 @@ def fetch_json(url):
 
     payload = {
         'client_id': os.environ.get('CLIENT_ID', None),
-        'client_secret': os.environ.get('CLIENT_SECRET', None),
+        'client_secret': os.environ.get('CLIENT_SECRET', None)
     }
 
     return requests.get(url, headers=headers, params=payload).json()

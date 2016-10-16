@@ -1,0 +1,15 @@
+.body--repository {
+  color: #4078c0;
+}
+
+.body--repository a:hover {
+  text-decoration: underline;
+}
+
+.repository--name {
+  font-weight: 500;
+}
+
+.repository--path-divider {
+  color: initial !important;
+}

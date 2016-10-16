@@ -1,0 +1,19 @@
+.app--footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-top: 1px solid #e5e5e5;
+  padding: 15px 0;
+  background-color: #f5f5f5;
+  width: 100vw;
+}
+
+.footer--container {
+  width: 90vw;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.app--footer a:hover {
+  color: #4078c0;
+}

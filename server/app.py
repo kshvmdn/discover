@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import os
 from flask import abort, Flask, jsonify, request
+from flask_cors import CORS, cross_origin
 
 from fetch import fetch
 
@@ -8,6 +9,7 @@ VERSION = '1.0'
 
 app = Flask(__name__)
 app.config["JSON_SORT_KEYS"] = False
+CORS(app)
 
 
 @app.route('/api/%s/<string:owner>/<string:repo>' % VERSION)

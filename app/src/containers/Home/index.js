@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import './index.css'
 import PageHead from './../../components/PageHead';
-import RepoForm from './../../components/RepoForm';
+import Form from './../../components/Form';
 
 class Home extends Component {
   render() {
@@ -13,7 +13,7 @@ class Home extends Component {
           <h3>Begin by entering a repository.</h3>
         </PageHead> */}
         <div className="body--content">
-          <RepoForm/>
+          <Form/>
         </div>
       </div>
     );

@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import './index.css';
 import './../../utils/btn.css';
 
-class RepoForm extends Component {
+class Form extends Component {
   constructor() {
     super();
 
@@ -75,4 +75,4 @@ class RepoForm extends Component {
   }
 }
 
-export default RepoForm;
+export default Form;

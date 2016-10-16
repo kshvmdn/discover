@@ -36,9 +36,12 @@ def fetch_json(url, **kwargs):
                            params=PAYLOAD).prepare()
 
     key = ':'.join(filter(None, re.sub(r'\/|\?|=|&', ':', req.url).split(':')))
+    print('KEY: %s' % key)
+
     value = r.get(key)
 
     if value is not None:
+        print('FOUND')
         return json.loads(value.decode('utf-8'))
 
     value = s.send(req).json()
@@ -50,23 +53,27 @@ def fetch_json(url, **kwargs):
 def get_paginated_results(url, n_results=INF, **kwargs):
     results = []
     seen = set()
-
-    page = 1
-    json = fetch_json(url, payload=dict(page=page))
-
     page_count = ceil(kwargs['count'] / PAYLOAD['per_page']) \
-        if 'star_count' in kwargs else INF
+        if 'count' in kwargs else INF
 
-    while json and len(json) > 0 and len(results) < n_results:
-        results.extend(json)
+    def get_page(page, **kwargs):
         seen.add(page)
 
         if 'randomize' in kwargs and kwargs['randomize'] and page_count != INF:
             while page in seen:
                 page = randint(1, page_count + 1)
-        else:
-            page += 1
 
+            return page
+
+        return page + 1
+
+    page = get_page(0, **kwargs)
+    json = fetch_json(url, payload=dict(page=page))
+
+    while json and len(json) > 0 and len(results) < n_results:
+        results.extend(json)
+
+        page = get_page(page, **kwargs)
         json = fetch_json(url, payload=dict(page=page))
 
     return results
@@ -83,7 +90,7 @@ def get_repo_stargazers(owner, repo):
     stargazer_count = get_stargazer_count()
 
     results = get_paginated_results(base,
-                                    n_results=50,
+                                    n_results=min(200, stargazer_count),
                                     count=stargazer_count,
                                     randomize=True)
 

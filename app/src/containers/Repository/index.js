@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import axios from 'axios';
 
 import './index.css';
+import ring from './../../ring.svg';
 import PageHead from './../../components/PageHead';
+import Results from './../../components/Results';
 
 const BASE_URL = 'http://0.0.0.0:3001/api/1.0'
 
@@ -32,8 +34,16 @@ class Repository extends Component {
   }
 
   render() {
-    console.log(this.state.results)
     let {owner, repo, results} = this.state
+
+    if (results.length === 0) {
+      return (
+        <div className="app--body-loading">
+          <img src={ring} className="body--loadingicon"/>
+        </div>
+      );
+    }
+
     return (
       <div className="app--body">
         <PageHead>
@@ -43,6 +53,9 @@ class Repository extends Component {
             <a href={`https://github.com/${owner}/${repo}`} className="repository--name">{repo}</a>
           </h1>
         </PageHead>
+        <div className="body--results">
+          <Results response={results}/>
+        </div>
       </div>
     );
   }

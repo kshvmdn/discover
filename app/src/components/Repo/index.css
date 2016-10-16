@@ -1,0 +1,12 @@
+.results--repo {
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  margin: 15px;
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+}
+
+.results--repo:hover {
+  border-color: #666;
+}

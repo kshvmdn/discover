@@ -1,5 +1,5 @@
 .app--footer {
-  position: absolute;
+  position: fixed;
   left: 0;
   bottom: 0;
   border-top: 1px solid #e5e5e5;
@@ -12,6 +12,10 @@
   width: 90vw;
   margin-right: auto;
   margin-left: auto;
+}
+
+.app--footer a {
+  font-weight: 500;
 }
 
 .app--footer a:hover {

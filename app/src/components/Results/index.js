@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import './index.css';
-import Repo from './../Repo';
+import RepoCard from './../RepoCard';
 
 class Results extends Component {
   constructor() {
@@ -20,7 +20,7 @@ class Results extends Component {
     return (
       <div className="app--results">
         {this.state.repos.map((repo, i) => (
-          <Repo key={i} repo={repo}/>
+          <RepoCard key={i} repo={repo}/>
         ))}
       </div>
     );

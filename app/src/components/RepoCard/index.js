@@ -2,15 +2,15 @@ import React, { Component } from 'react';
 
 import './index.css';
 
-class Repo extends Component {
+class RepoCard extends Component {
   constructor() {
     super();
     this.state = {}
   }
 
   render() {
+    // TODO
     let {repo} = this.props;
-    console.log(repo);
     return (
       <div className="results--repo">
       </div>
@@ -18,4 +18,4 @@ class Repo extends Component {
   }
 }
 
-export default Repo;
+export default RepoCard;

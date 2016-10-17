@@ -6,7 +6,7 @@ const Header = () => (
   <div className="header">
     <div className="header--container">
       <div className="container--name">
-        <a href="/">Explore GitHub</a>
+        <a href="/">Discover</a>
       </div>
       <div className="container--logo right">
         <a href="https://github.com/kshvmdn/explore-github" title="GitHub">

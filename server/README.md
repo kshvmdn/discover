@@ -1,1 +1,1 @@
-## explore-github: server
+## discover: server

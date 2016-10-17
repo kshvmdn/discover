@@ -1,1 +1,1 @@
-## explore-github: app
+## discover: app

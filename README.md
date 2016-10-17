@@ -1,4 +1,8 @@
-## explore-github
+## discover
+
+> _Discover_ new GitHub repositories.
+
+Enter a repository and aggregate a list of similar repositories.
 
 ### Setup
 

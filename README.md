@@ -24,7 +24,30 @@
 
 ### Usage
 
-- _TODO_
+- You'll need to be running the server, front-end application, and Redis separately. I recommend [tmux](https://tmux.github.io/) / [iTerm 2](https://www.iterm2.com/), but multiple terminal windows will work just as well.
+
+- Start Redis.
+
+  ```sh
+  $ redis-server # add --daemonize yes to run Redis in the background
+  ```
+
+- Start the Flask server. It'll be running on port 3001. Refer to [this](#api)for the API reference.
+
+  ```sh
+  $ DEBUG=<True|False> ./server/app.py
+  ```
+
+- Start the React application. It'll be running on port 3000.
+
+  ```sh
+  cd app && npm start
+  ```
+
+#### API
+
+- __`/api/1.0/{owner}/{repo}`__
+  + Return a list of repositories starred by stargazers of the repository provided. Will return a maximum of 200 stargazers by 100 repositories (i.e. 20k repos).
 
 ### Contribute
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import github from './../../github.svg';
+import github from './../../media/github.svg';
 import './index.css';
 
 const Header = () => (

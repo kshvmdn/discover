@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import './index.css';
-import './../../utils/btn.css';
+import './../../media/btn.css';
 
 class Form extends Component {
   constructor() {

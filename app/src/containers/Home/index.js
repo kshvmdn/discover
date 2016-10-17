@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import './index.css'
-import PageHead from './../../components/PageHead';
 import Form from './../../components/Form';
 
 class Home extends Component {

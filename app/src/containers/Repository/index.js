@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 
 import './index.css';
-import ring from './../../ring.svg';
+import ring from './../../media/ring.svg';
 import PageHead from './../../components/PageHead';
 import Results from './../../components/Results';
 
@@ -39,7 +39,7 @@ class Repository extends Component {
     if (results.length === 0) {
       return (
         <div className="app--body-loading">
-          <img src={ring} className="body--loadingicon"/>
+          <img src={ring} className="body--loadingicon" alt="Loading"/>
         </div>
       );
     }

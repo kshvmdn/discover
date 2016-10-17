@@ -1,12 +1,14 @@
 ## explore-github
 
-### Installation
+### Setup
 
 ##### Requirements:
 
   - Python 3+
   - Redis
   - Node.js (for development)
+
+##### Installation
 
 - Clone project.
 

@@ -1,0 +1,67 @@
+.results--repo {
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  margin: 15px;
+  display: inline-block;
+  width: 250px;
+  min-height: 120px;
+  padding: 10px 15px;
+  font-size: 14px;
+  vertical-align: top;
+  position: relative;
+}
+
+.results--repo:hover {
+  border-color: #666;
+}
+
+.results--repo .repo--name {
+  margin-bottom: 10px;
+}
+
+.results--repo .repo--name a:hover {
+  color: #4078c0;
+}
+
+.results--repo .repo--desc {
+  text-align: left;
+  font-size: 13px;
+  font-weight: 300;
+  padding: 0 5px;
+}
+
+.results--repo .repo--meta {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+
+.results--repo .repo--meta .repo--lang {
+  font-size: 11px;
+  float: left;
+  margin: 8px 0 0 3px;
+}
+
+.results--repo .repo--meta .repo--icons {
+  float: right;
+}
+
+.results--repo .repo--meta div {
+  display: inline-block;
+  padding: 2px 6px;
+}
+
+.results--repo .repo--meta .repo--stargazercount {
+  font-size: 10px;
+}
+
+.results--repo .repo--meta .repo--stargazercount img {
+  height: 20px;
+  vertical-align: middle;
+}
+
+.results--repo .repo--meta .repo--link img {
+  height: 15px;
+  vertical-align: middle;
+}

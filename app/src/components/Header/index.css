@@ -1,0 +1,20 @@
+.header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.header--container {
+  width: 90vw;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container--name {
+  display: inline-block;
+}
+
+.container--logo img {
+  height: 24px;
+}

@@ -1,0 +1,24 @@
+.app--body {
+  padding-bottom: 40px;
+}
+
+.app--body-loading {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.body--repository {
+  color: #4078c0;
+}
+
+.body--repository a:hover {
+  text-decoration: underline;
+}
+
+.repository--name {
+  font-weight: 500;
+}
+
+.repository--path-divider {
+  color: initial !important;
+}

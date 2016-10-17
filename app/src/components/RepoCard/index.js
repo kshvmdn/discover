@@ -16,7 +16,6 @@ class RepoCard extends Component {
     repo.slug = `${repo.owner}/${repo.name}`
     repo.color = colours.hasOwnProperty(repo.language) ? colours[repo.language].color : '#000';
 
-    console.log(repo);
     return (
       <div className="results--repo">
         <div className="repo--name">

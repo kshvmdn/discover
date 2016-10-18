@@ -2,17 +2,17 @@
 
 > _Discover_ new GitHub repositories.
 
-Enter a repository and aggregate a list of similar repositories.
+Enter a repository and aggregate a list of _similar_ repositories.
 
 ### Setup
 
-##### Requirements:
+#### Requirements:
 
   - Python 3+
   - Redis
   - Node.js (for development)
 
-##### Installation
+#### Installation
 
 - Clone project.
 
@@ -32,22 +32,24 @@ Enter a repository and aggregate a list of similar repositories.
 
 - You'll need to be running the server, front-end application, and Redis separately. I recommend [tmux](https://tmux.github.io/) / [iTerm 2](https://www.iterm2.com/), but multiple terminal windows will work just as well.
 
+- Generate a new access token [here](https://github.com/settings/tokens), you'll require this to run the server.
+
 - Start Redis.
 
   ```sh
   $ redis-server # add --daemonize yes to run Redis in the background
   ```
 
-- Start the Flask server. It'll be running on port 3001. Refer to [this](#api)for the API reference.
+- Start the Flask server. It'll be running on port `3001`. See [this](#api) for the API reference.
 
   ```sh
-  $ DEBUG=<True|False> ./server/app.py
+  $ ACCESS_TOKEN=<access_token> DEBUG=<True|False> ./server/app.py
   ```
 
-- Start the React application. It'll be running on port 3000.
+- Start the React application. It'll be running on port `3000`.
 
   ```sh
-  cd app && npm start
+  $ cd app && npm start
   ```
 
 #### API
@@ -57,7 +59,7 @@ Enter a repository and aggregate a list of similar repositories.
 
 ### Contribute
 
-This project is completely open source. Feel free to [open an issue](#issue) for bugs/requests or [submit a pull request](#pr) for code contributions.
+This project is completely open source. Feel free to [open an issue](https://github.com/kshvmdn/discover/issues) for bugs/requests or [submit a pull request](https://github.com/kshvmdn/discover/pulls) for code contributions.
 
 ### License
 

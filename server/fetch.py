@@ -19,7 +19,7 @@ INF = float('Inf')
 PAYLOAD = {'per_page': 100}
 HEADERS = {
     'Authorization': 'token %s' % ACCESS_TOKEN,
-    'User-Agent': 'https://github.com/kshvmdn/explore-github'}
+    'Referer': 'https://github.com/kshvmdn/discover'}
 
 s = requests.Session()
 r = redis.StrictRedis(host=REDIS_HOST, port=REDIS_PORT)

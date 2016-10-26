@@ -1,3 +1,5 @@
+## PYTHON ######################################################################
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -91,3 +93,19 @@ ENV/
 
 # Sass
 .sass-cache
+
+## NODE.JS #####################################################################
+
+# dependencies
+node_modules
+
+# testing
+coverage
+
+# production
+build
+
+# misc
+.DS_Store
+.env
+npm-debug.log
